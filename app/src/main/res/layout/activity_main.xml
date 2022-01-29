@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/DodajRV"
+            android:layout_width="270dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Upis radnog vremena"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/TraziRV"
+            android:layout_width="270dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Traži vrijeme rada"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DodajRV" />
+
+        <Button
+            android:id="@+id/Izracunaj"
+            android:layout_width="270dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Izračunaj vrijeme rada"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TraziRV" />
+
+        <Button
+            android:id="@+id/DodajRVKorisnik"
+            android:layout_width="270dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Upis radnog vremena za korisnika"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Izracunaj" />
+
+        <Button
+            android:id="@+id/SviKorisnici"
+            android:layout_width="270dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Prikaži sve korisnike"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DodajRVKorisnik" />
+
+        <Button
+            android:id="@+id/NoviKorisnik"
+            android:layout_width="270dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Dodaj novog korisnika"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SviKorisnici" />
+
+        <Button
+            android:id="@+id/DodajAdmin"
+            android:layout_width="270dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Dodaj novog admina"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NoviKorisnik" />
+
+        <Button
+            android:id="@+id/ObrisiKorisnika"
+            android:layout_width="270dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Obriši korisnika"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DodajAdmin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

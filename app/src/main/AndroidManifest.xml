@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sustavradnogvremena">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SustavRadnogVremena">
+        <activity android:name=".IzracunajZaMjesec"></activity>
+        <activity android:name=".Izracunaj" />
+        <activity android:name=".TraziM" />
+        <activity android:name=".TraziD" />
+        <activity android:name=".TraziK" />
+        <activity android:name=".TraziKM" />
+        <activity android:name=".TraziKD" />
+        <activity android:name=".TraziRV" />
+        <activity android:name=".DodajAdmin" />
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".RadnoVrijemeZaKorisnika" />
+        <activity android:name=".RadnoVrijeme" />
+        <activity android:name=".ObrisiKorisnik" />
+        <activity
+            android:name=".Prijava"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NoviKorisnik" />
+        <activity android:name=".SviKorisnici" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
